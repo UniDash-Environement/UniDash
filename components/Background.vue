@@ -4,8 +4,7 @@
 
 <template>
 <div class="backgroundImage">
-  <div class="backgroundTopOverImage" />
-  <div class="backgroundBottomOverImage" />
+  <div class="backgroundOverImage" />
 </div>
 </template>
 
@@ -20,27 +19,18 @@
 
   background-image: url("assets/images/background.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 65%;
+  background-color: rgba(34, 40, 49, 1);
 
-  .backgroundTopOverImage {
+  .backgroundOverImage {
     position: absolute;
     top: 0;
-    height: 60%;
+    height: 65%;
     left: 0;
     right: 0;
 
-    background: linear-gradient(rgba(31, 41, 55, 0.8), rgba(31, 41, 55, 1));
-    backdrop-filter: blur(0.6rem);
-  }
-
-  .backgroundBottomOverImage {
-    position: absolute;
-    bottom: 0;
-    height: 40%;
-    left: 0;
-    right: 0;
-
-    background: rgba(31, 41, 55, 1);
+    background: linear-gradient(rgba(34, 40, 49, 0.8), rgba(34, 40, 49, 1));
+    backdrop-filter: blur(1rem);
   }
 }
 </style>
